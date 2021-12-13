@@ -61,13 +61,12 @@
             // labelOperacao
             // 
             this.labelOperacao.AutoSize = true;
-            this.labelOperacao.BackColor = System.Drawing.Color.IndianRed;
-            this.labelOperacao.Location = new System.Drawing.Point(12, 16);
+            this.labelOperacao.BackColor = System.Drawing.Color.Transparent;
+            this.labelOperacao.Location = new System.Drawing.Point(21, 16);
             this.labelOperacao.Name = "labelOperacao";
-            this.labelOperacao.Size = new System.Drawing.Size(13, 13);
+            this.labelOperacao.Size = new System.Drawing.Size(0, 13);
             this.labelOperacao.TabIndex = 1;
-            this.labelOperacao.Text = "o";
-            this.labelOperacao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelOperacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonC
             // 
@@ -77,6 +76,7 @@
             this.buttonC.TabIndex = 5;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
             // 
             // buttonSete
             // 
@@ -146,6 +146,7 @@
             this.buttonCE.TabIndex = 9;
             this.buttonCE.Text = "CE";
             this.buttonCE.UseVisualStyleBackColor = true;
+            this.buttonCE.Click += new System.EventHandler(this.buttonCE_Click);
             // 
             // buttonTres
             // 
@@ -183,8 +184,9 @@
             this.buttonVezes.Name = "buttonVezes";
             this.buttonVezes.Size = new System.Drawing.Size(52, 41);
             this.buttonVezes.TabIndex = 13;
-            this.buttonVezes.Text = "*";
+            this.buttonVezes.Text = "x";
             this.buttonVezes.UseVisualStyleBackColor = true;
+            this.buttonVezes.Click += new System.EventHandler(this.buttonVezes_Click);
             // 
             // button0
             // 
@@ -242,7 +244,7 @@
             this.buttonPonto.Name = "buttonPonto";
             this.buttonPonto.Size = new System.Drawing.Size(52, 41);
             this.buttonPonto.TabIndex = 23;
-            this.buttonPonto.Text = ".";
+            this.buttonPonto.Text = ",";
             this.buttonPonto.UseVisualStyleBackColor = true;
             this.buttonPonto.Click += new System.EventHandler(this.buttonVirgula_Click);
             // 

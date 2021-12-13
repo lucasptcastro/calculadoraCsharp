@@ -101,6 +101,11 @@ namespace estudoPOO
             {
                 textBoxResultado.Text = Convert.ToString(valor1 / valor2).Replace(".", ",");
             }
+
+            if (operacao == "MULTIPLICACAO")
+            {
+                textBoxResultado.Text = Convert.ToString(valor1 * valor2).Replace(".", ",");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -123,6 +128,30 @@ namespace estudoPOO
             operacao = "DIVISAO"; //a operação irá ser igual a DIVISAO
 
             labelOperacao.Text = "÷"; //o símbolo "÷" será mostrado na label para identificar qual foi a operação selecionada
+        }
+
+        private void buttonVezes_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(textBoxResultado.Text, CultureInfo.InvariantCulture/*comando para que a formatação seja mostrada com as casas decimais*/);
+
+            textBoxResultado.Text = ""; //quando o botão x for apertado, o campo de texto será limpado para que a segunda operação possa entrar
+
+            operacao = "MULTIPLICACAO"; //a operação irá ser igual a MULTIPLICACAO
+
+            labelOperacao.Text = "x"; //o símbolo "x" será mostrado na label para identificar qual foi a operação selecionada
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            textBoxResultado.Text = "";
+            labelOperacao.Text = "";
+            valor1 = 0;
+            valor2 = 0;
+        }
+
+        private void buttonCE_Click(object sender, EventArgs e)
+        {
+            textBoxResultado.Text = "";
         }
 
         private void buttonVirgula_Click(object sender, EventArgs e)
