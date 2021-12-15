@@ -89,7 +89,9 @@ namespace estudoPOO
 
             if (operacao == "SOMA") // Se a operação for de soma:
             {
-                textBoxResultado.Text = Convert.ToString(valor1 + valor2).Replace(".",","); // O valor será convertido para string para que possa ser exibido no textBox
+                textBoxResultado.Text = Convert.ToString(valor1 + valor2).Replace(".",","); // O valor será convertido para string para que possa ser exibido
+                                                                                            // no textBox e o replace irá trocar os pontos por vírgula, quando
+                                                                                            // o mesmo for convertido para string
             }
     
             if (operacao == "SUBTRACAO")
